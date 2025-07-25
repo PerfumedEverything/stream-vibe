@@ -44,6 +44,7 @@ const categoryItems = [
       '/src/assets/images/categories/action/4.jpg',
     ],
   },
+
   {
     title: 'Action',
     images: [
@@ -89,6 +90,7 @@ const categoryItems = [
       '/src/assets/images/categories/action/4.jpg',
     ],
   },
+
   {
     title: 'Action',
     images: [
@@ -134,6 +136,7 @@ const categoryItems = [
       '/src/assets/images/categories/action/4.jpg',
     ],
   },
+
   {
     title: 'Action',
     images: [
@@ -178,7 +181,7 @@ const categoryItems = [
       '/src/assets/images/categories/action/3.jpg',
       '/src/assets/images/categories/action/4.jpg',
     ],
-  }
+  },
 ]
 
 export default categoryItems

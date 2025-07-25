@@ -1,6 +1,6 @@
 .burger-button {
   @include flex-center(true);
-  @include square(51);
+  @include square(51px);
 
   padding: 0;
   background-color: var(--color-black-10);
@@ -46,6 +46,3 @@
     }
   }
 }
-
-
-

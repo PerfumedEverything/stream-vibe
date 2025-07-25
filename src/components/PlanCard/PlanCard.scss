@@ -36,6 +36,6 @@
   &__actions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: fluid-to-laptop(20, 12);
+    column-gap: fluid-to-laptop(20, 12);
   }
 }

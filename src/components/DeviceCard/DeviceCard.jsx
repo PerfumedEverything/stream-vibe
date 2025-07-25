@@ -4,7 +4,7 @@ const DeviceCard = (props) => {
   const {
     title,
     description,
-    imgSrc
+    imgSrc,
   } = props
 
   return (
@@ -20,12 +20,10 @@ const DeviceCard = (props) => {
             loading="lazy"
           />
         </div>
-        <h3 className="device-card__title h4">
-          {title}
-        </h3>
+        <h3 className="device-card__title h4">{title}</h3>
       </header>
       <div className="device-card__description">
-        {description}
+        <p>{description}</p>
       </div>
     </div>
   )

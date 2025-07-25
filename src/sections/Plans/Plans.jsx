@@ -1,9 +1,9 @@
-import Section from "@/layouts/Section";
-import Grid from "@/components/Grid";
-import planGroups from "./planGroups";
-import PlanCard from "@/components/PlanCard";
-import TabsNavigation from "@/components/Tabs/components/TabsNavigation";
-import Tabs from "@/components/Tabs";
+import Section from '@/layouts/Section'
+import Grid from '@/components/Grid'
+import planGroups from './planGroups'
+import PlanCard from '@/components/PlanCard'
+import TabsNavigation from '@/components/Tabs/components/TabsNavigation'
+import Tabs from '@/components/Tabs'
 
 const Plans = () => {
   const tabsTitle = 'plans-tabs'

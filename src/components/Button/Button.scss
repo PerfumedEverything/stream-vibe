@@ -44,7 +44,7 @@
       @include square(44px);
 
       .button__icon {
-        --iconSize: #{fluid-to-laptop(34, 24)}
+        --iconSize: #{fluid-to-laptop(34, 24)};
       }
     }
   }

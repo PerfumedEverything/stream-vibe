@@ -1,5 +1,5 @@
 import './PlanCard.scss'
-import Button from "@/components/Button";
+import Button from '@/components/Button'
 
 const PlanCard = (props) => {
   const {
@@ -12,7 +12,7 @@ const PlanCard = (props) => {
     <div className="plan-card">
       <div className="plan-card__info">
         <h3 className="plan-card__title h4">{title}</h3>
-        <div className="plan-card__decription">
+        <div className="plan-card__description">
           <p>{description}</p>
         </div>
       </div>

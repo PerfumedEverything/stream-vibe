@@ -1,11 +1,10 @@
-import Section from "@/layouts/Section";
-import CategoryCard from "@/components/CategoryCard";
-import Slider from "@/components/Slider";
-import SliderNavigation from "@/components/Slider/components/SliderNavigation";
-import categoryItems from "./categoryItems";
+import Section from '@/layouts/Section'
+import CategoryCard from '@/components/CategoryCard'
+import Slider from '@/components/Slider'
+import SliderNavigation from '@/components/Slider/components/SliderNavigation'
+import categoryItems from './categoryItems'
 
 const Categories = () => {
-
   const sliderNavigationId = 'categories-slider-navigation'
 
   return (
@@ -14,17 +13,16 @@ const Categories = () => {
       titleId="categories-title"
       description="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"
       actions={(
-        <div>
-          <SliderNavigation
-            mode="tile"
-            id={sliderNavigationId}
-          />
-        </div>
+        <SliderNavigation
+          mode="tile"
+          id={sliderNavigationId}
+        />
       )}
       isActionsHiddenOnMobile
     >
       <Slider
         navigationTargetElementId={sliderNavigationId}
+        isBeyondTheViewportOnMobileS
       >
         {categoryItems.map((categoryItem, index) => (
           <CategoryCard

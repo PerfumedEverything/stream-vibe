@@ -14,7 +14,7 @@
   visibility: visible;
 }
 
-@mixin flex-center ($isInline: false) {
+@mixin flex-center($isInline: false) {
   @if ($isInline) {
     display: inline-flex;
   } @else {
@@ -25,25 +25,25 @@
   align-items: center;
 }
 
-@mixin abs-cover{
+@mixin abs-cover {
   position: absolute;
   inset: 0;
 }
 
-@mixin abs-center{
+@mixin abs-center {
   position: absolute;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
 }
 
-@mixin abs-x{
+@mixin abs-x {
   position: absolute;
   left: 50%;
   translate: -50%;
 }
 
-@mixin abs-y{
+@mixin abs-y {
   position: absolute;
   top: 50%;
   translate: 0 -50%;
@@ -74,6 +74,6 @@
 }
 
 @mixin disabled {
-  opacity: .5;
+  opacity: 0.5;
   cursor: not-allowed;
 }

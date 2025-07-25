@@ -1,13 +1,13 @@
 import './Tabs.scss'
-import classNames from "classnames";
-import getTabsElementsIdFromTitle from "./utils/getTabsElementsIdFromTitle";
-import TabsNavigation from "./components/TabsNavigation";
+import classNames from 'classnames'
+import getTabsElementsIdsFromTitle from './utils/getTabsElementsIdsFromTitle'
+import TabsNavigation from './components/TabsNavigation'
 
 const Tabs = (props) => {
   const {
     className,
     title,
-    items= [],
+    items = [],
     navigationTargetElementId = null,
     isEnableOnlyOnMobile = false,
   } = props
@@ -18,27 +18,25 @@ const Tabs = (props) => {
         'tabs--enable-only-on-mobile': isEnableOnlyOnMobile
       })}
       data-js-tabs={JSON.stringify({
-        navigationTargetElementId
+        navigationTargetElementId,
       })}
     >
-      {!navigationTargetElementId && (
-        <TabsNavigation title={title} items={items} />
-      )}
+      {!navigationTargetElementId && <TabsNavigation title={title} items={items} />}
       <div className="tabs__body">
         {items.map((item, index) => {
           const {
             title,
             children,
-            isActive
+            isActive,
           } = item
 
-          const { buttonId, contentId } = getTabsElementsIdFromTitle(title)
+          const { buttonId, contentId } = getTabsElementsIdsFromTitle(title)
 
           return (
             <div
               className={classNames('tabs__content', {
-              'is-active': isActive,
-            })}
+                'is-active': isActive,
+              })}
               id={contentId}
               aria-labelledby={buttonId}
               tabIndex={0}

@@ -1,12 +1,12 @@
 import './MovieBannerCard.scss'
-import {Image} from "minista";
-import Button from "@/components/Button";
+import { Image } from 'minista'
+import Button from '@/components/Button'
 
 const MovieBannerCard = (props) => {
   const {
     title,
     description,
-    imgSrc
+    imgSrc,
   } = props
 
   return (

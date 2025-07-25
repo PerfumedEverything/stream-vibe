@@ -18,19 +18,14 @@ const Accordion = (props) => {
       >
         <summary className="accordion__summary">
           <h3 className="accordion__title h5">
-            <span
-              role="term"
-              aria-details={id}
-            >
-              {title}
-            </span>
+            <span role="term" aria-details={id}>{title}</span>
           </h3>
         </summary>
       </details>
       <div
         className="accordion__content"
         id={id}
-        role="definition"
+        role="defenition"
       >
         <div className="accordion__content-inner">
           <div className="accordion__content-body">

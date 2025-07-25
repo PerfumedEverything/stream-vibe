@@ -7,7 +7,7 @@ class OverlayMenu {
 
   stateClasses = {
     isActive: 'is-active',
-    isLock: 'is-lock,'
+    isLock: 'is-lock',
   }
 
   constructor() {

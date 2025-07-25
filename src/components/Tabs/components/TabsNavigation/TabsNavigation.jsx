@@ -1,8 +1,7 @@
 import './TabsNavigation.scss'
-import getIdFromTitle from "@/utils/getIdFromTitle";
-import classNames from "classnames";
-import getTabsElementsIdFromTitle
-  from "@/components/Tabs/utils/getTabsElementsIdFromTitle";
+import getIdFromTitle from '@/utils/getIdFromTitle'
+import classNames from 'classnames'
+import getTabsElementsIdsFromTitle from '@/components/Tabs/utils/getTabsElementsIdsFromTitle'
 
 const TabsNavigation = (props) => {
   const {
@@ -27,7 +26,7 @@ const TabsNavigation = (props) => {
         {title}
       </h3>
       {items.map((item, index) => {
-        const { buttonId, contentId } = getTabsElementsIdFromTitle(item.title)
+        const { buttonId, contentId } = getTabsElementsIdsFromTitle(item.title)
 
         return (
           <div
@@ -39,8 +38,8 @@ const TabsNavigation = (props) => {
             role="tab"
             aria-selected={item.isActive}
             tabIndex={item.isActive ? 0 : -1}
-            key={index}
             data-js-tabs-button=""
+            key={index}
           >
             {item.title}
           </div>

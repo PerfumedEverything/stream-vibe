@@ -21,7 +21,7 @@
     &-column {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: start;
       row-gap: fluid(24, 16);
     }
 
@@ -44,11 +44,6 @@
     @include mobile {
       flex-direction: column;
       row-gap: 20px;
-    }
-
-    &-links {
-      display: flex;
-      column-gap: 16px;
     }
   }
 }

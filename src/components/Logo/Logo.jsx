@@ -24,6 +24,7 @@ const Logo = (props) => {
         height={60}
         loading={loading}
       />
+
     </a>
   )
 }

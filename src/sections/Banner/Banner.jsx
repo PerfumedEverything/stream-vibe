@@ -1,5 +1,5 @@
 import './Banner.scss'
-import Button from "@/components/Button";
+import Button from '@/components/Button'
 
 const Banner = () => {
   const titleId = 'banner-title'
@@ -19,8 +19,8 @@ const Banner = () => {
           </div>
         </div>
         <Button
-          className='banner__button'
-          label="Start a Free Trial"
+          className="banner__button"
+          label="Start a Free Trail"
           href="/subscriptions"
         />
       </div>

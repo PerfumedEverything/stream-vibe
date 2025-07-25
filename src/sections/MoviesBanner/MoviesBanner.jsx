@@ -1,6 +1,6 @@
 import './MoviesBanner.scss'
-import Slider from "@/components/Slider";
-import MovieBannerCard from "@/components/MovieBannerCard";
+import Slider from '@/components/Slider'
+import MovieBannerCard from '@/components/MovieBannerCard'
 
 const MoviesBanner = () => {
   const titleId = 'movies-banner-title'
@@ -42,11 +42,11 @@ const MoviesBanner = () => {
           breakpoints: {
             1024: {
               allowTouchMove: false,
-            }
+            },
           },
         }}
         navigationPosition="abs-bottom"
-        hasScrollBannerOnMobile={false}
+        hasScrollbarOnMobile={false}
       >
         {movieCards.map((movieCard, index) => (
           <MovieBannerCard{...movieCard} key={index} />

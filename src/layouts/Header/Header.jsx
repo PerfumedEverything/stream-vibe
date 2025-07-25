@@ -1,37 +1,38 @@
 import './Header.scss'
-import Logo from "@/components/Logo";
-import classNames from "classnames";
-import Button from "@/components/Button";
-import BurgerButton from "@/components/BurgerButton";
+import Logo from '@/components/Logo'
+import classNames from 'classnames'
+import Button from '@/components/Button'
+import BurgerButton from '@/components/BurgerButton'
 
 const Header = (props) => {
   const {
     url,
-    isFixed
+    isFixed,
   } = props
 
   const menuItems = [
     {
       label: 'Home',
-      href: '/'
+      href: '/',
     },
     {
       label: 'Movies & Shows',
-      href: '/movies'
+      href: '/movies',
     },
     {
       label: 'Support',
-      href: '/support'
+      href: '/support',
     },
     {
       label: 'Subscriptions',
-      href: '/subscriptions'
-    }
+      href: '/subscriptions',
+    },
   ]
+
   return (
     <header
       className={classNames('header', {
-        'is-fixed': isFixed
+        'is-fixed': isFixed,
       })}
       data-js-overlay-menu=""
     >
@@ -46,11 +47,8 @@ const Header = (props) => {
         >
           <nav className="header__menu">
             <ul className="header__menu-list">
-              {menuItems.map(({ label, href }, index ) => (
-                <li
-                  className="header__menu-item"
-                  key={index}
-                >
+              {menuItems.map(({ label, href }, index) => (
+                <li className="header__menu-item" key={index}>
                   <a
                     className={classNames('header__menu-link', {
                       'is-active': href === url
@@ -83,7 +81,7 @@ const Header = (props) => {
         <BurgerButton
           className="header__burger-button visible-tablet"
           extraAttrs={{
-            'data-js-overlay-menu-burger-button' : '',
+            'data-js-overlay-menu-burger-button': '',
           }}
         />
       </div>

@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
           <Button
             className="hero__button"
-            iconName="play-small"
+            iconName="play"
             hasFillIcon
             label="Start Watching Now"
           />
