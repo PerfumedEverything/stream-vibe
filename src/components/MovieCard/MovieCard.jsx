@@ -1,7 +1,7 @@
+import './MovieCard.scss'
 import { Image } from 'minista'
 import Badge from '@/components/Badge'
-import './MovieCard.scss'
-import RatingView from '../RatingView'
+import RatingView from '@/components/RatingView'
 
 const MovieCard = (props) => {
   const {
@@ -47,9 +47,9 @@ const MovieCard = (props) => {
         )}
 
         {rating && (
-        <Badge className="movie-card__rating-badge">
-          <RatingView {...rating} />
-        </Badge>
+          <Badge className="movie-card__rating-badge">
+            <RatingView {...rating} />
+          </Badge>
         )}
 
         {views && (

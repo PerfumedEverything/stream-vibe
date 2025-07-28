@@ -1,13 +1,13 @@
+import './ReviewCard.scss'
 import Badge from '@/components/Badge'
 import RatingView from '@/components/RatingView'
-import './ReviewCard.scss'
 
 const ReviewCard = (props) => {
   const {
     name,
     subtitle,
     description,
-    ratingValue
+    ratingValue,
   } = props
 
   return (
@@ -29,7 +29,6 @@ const ReviewCard = (props) => {
       </div>
     </div>
   )
-
 }
 
 export default ReviewCard

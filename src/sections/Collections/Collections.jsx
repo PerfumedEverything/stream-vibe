@@ -1,5 +1,5 @@
-import Tabs from '@/components/Tabs'
 import './Collections.scss'
+import Tabs from '@/components/Tabs'
 import collectionGroups from './collectionGroups'
 import getIdFromTitle from '@/utils/getIdFromTitle'
 import Section from '@/layouts/Section'
@@ -63,7 +63,7 @@ const Collections = () => {
               )
             })}
           </div>
-        ),
+        )
       }))}
     />
   )

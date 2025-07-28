@@ -4,7 +4,7 @@ const MovieBanner = () => {
   const titleId = 'movie-banner-title'
 
   return (
-    <section 
+    <section
       className="container"
       aria-labelledby={titleId}
     >

@@ -16,7 +16,7 @@
 
   &__content {
     &:not(.is-active) {
-      display:var(--tabsNonActiveContentDisplay);
+      display: var(--tabsNonActiveContentDisplay);
     }
   }
 }

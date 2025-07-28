@@ -1,5 +1,5 @@
-import RatingView from '@/components/RatingView'
 import './Ratings.scss'
+import RatingView from '@/components/RatingView'
 
 const Ratings = (props) => {
   const {
@@ -12,7 +12,7 @@ const Ratings = (props) => {
         {items.map(({ title, ratingValue }, index) => (
           <li className="ratings__item" key={index}>
             <h4 className="ratings__title">{title}</h4>
-            <RatingView 
+            <RatingView
               value={ratingValue}
               label={ratingValue}
             />

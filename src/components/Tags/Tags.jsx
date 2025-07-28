@@ -2,7 +2,7 @@ import './Tags.scss'
 
 const Tags = (props) => {
   const {
-    items = [], 
+    items = [],
   } = props
 
   return (

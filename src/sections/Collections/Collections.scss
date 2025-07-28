@@ -24,8 +24,8 @@
 
   &__title {
     position: absolute;
-    top: 0;
     left: var(--collectionsGroupPadding);
+    top: 0;
     translate: 0 -50%;
     padding: fluid-to-laptop(10, 8) fluid-to-laptop(24, 20);
     color: var(--color-white);

@@ -19,9 +19,11 @@ const MovieBannerCard = (props) => {
         className="movie-banner-card__image"
         src={imgSrc}
       />
-      <div className={classNames('movie-banner-card__inner', {
-        'movie-banner-card__inner--small-padding-y': isSmallPaddingY
-      })}>
+      <div
+        className={classNames('movie-banner-card__inner', {
+          'movie-banner-card__inner--small-padding-y': isSmallPaddingY,
+        })}
+      >
         <div className="movie-banner-card__body">
           <TitleTag
             className="movie-banner-card__title h3"
